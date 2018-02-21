@@ -64,7 +64,6 @@ public class GameBoard {
 	 */
 	public void updateState() {
 		boolean newPiece = false;
-		//Piece initialPiece	= currPiece;
 		pieceBuffer.clear();
 		
 		//Movement phase

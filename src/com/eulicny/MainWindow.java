@@ -99,9 +99,9 @@ public class MainWindow extends JFrame {
 	        public void paintComponent(Graphics g) {
 	        	System.out.println("Window Repainted!");
 	            super.paintComponent(g);
-	           // this.currentBoard = new Matrix(10, 20);
 	            this.currentBoard	=	this.gameboard.getGameState();
-	            //this.currentBoard.set(arg0, arg1, arg2);
+	            
+	            //Paint the recs & the blocks
 	            for(int i=0; i < this.currentBoard.getColumnDimension(); i++) {
 	            	for(int j=0; j < this.currentBoard.getRowDimension(); j++ ){
 	            		if(this.currentBoard.get(j, i) == 1)
